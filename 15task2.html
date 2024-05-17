@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style>
+.grid-container{
+                         display: grid;
+                         grid-template-columns:  100px 100px;
+                         padding: 20px;
+                         text-align: center;
+                         gap: 3px;
+                         width: 400px;
+}
+.item1{ 
+  grid-column-start: 1;
+  grid-column-end: 4; 
+  border: 2px solid black;       
+}
+.item1:hover{ background-color: brown;}
+.item2{ 
+  grid-column-start: 1;
+  grid-column-end: 4; 
+  border: 2px solid black;         
+}
+.item3{ 
+  grid-row-start: 3;
+  grid-row-end: 4; 
+  border: 2px solid black;
+  height:30px; 
+  padding: 30px;        
+}
+.item4{ 
+  grid-column-start:2;
+  grid-column-end:4 ; 
+  border: 2px solid black; 
+  padding: 30px;
+  height: 30px;        
+}
+.item6{ 
+  grid-column-start: 1;
+  grid-column-end: 4; 
+  border: 2px solid black; }
+  .item2:hover{ background-color: rgb(81, 165, 42);}
+  .item3:hover{ background-color: rgb(73, 42, 165);}
+  .item4:hover{ background-color: rgb(161, 165, 42);}
+  .item6:hover{ background-color: rgb(42, 101, 165);}
+
+</style>
+</head>
+<body>
+    <div class="grid-container">
+  <div class="item1">header section </div>
+  <div class="item2">navigation bar</div>
+  <div class="item3">index</div>
+  <div class="item4">content section</div> 
+  <div class="item6">footer section</div>                      
+</body>
+</html>
